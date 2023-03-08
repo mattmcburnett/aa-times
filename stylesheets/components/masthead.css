@@ -3,36 +3,21 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30px 15px 75px;
     grid-template-areas: "menu . action"
-    ". technologies ."
-    "date logo paper";
+        ". technologies ."
+        "date logo paper";
 }
 
 header {
     padding: 0;
+    width: 90%;
 }
 
-.masthead__technologies {
-    grid-area: technologies;
-}
 
 .masthead__menu-and-search {
     grid-area: menu;
-}
-
-.masthead__actions {
-    grid-area: action;
-}
-
-.masthead__date {
-    grid-area: date;
-}
-
-.masthead__logo {
-    grid-area: logo;
-}
-
-.masthead__paper {
-    grid-area: paper;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
 }
 
 .fa-bars,
@@ -45,4 +30,67 @@ header {
 .fa-bars:hover,
 .fa-search:hover {
     background-color: #f7f7f5;
+}
+
+.masthead__actions {
+    grid-area: action;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.masthead__actions {
+    padding-top: 15px;
+}
+
+.fa-cog {
+    margin-left: 15px;
+}
+
+.masthead__technologies {
+    grid-area: technologies;
+    font-size: 10px;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.masthead__technologies span {
+    margin-left: 20px;
+    /* border: red solid 3px; */
+}
+
+.masthead__logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 30px; */
+    border-top: #e6e6e6 1px solid;
+    border-bottom: #e6e6e6 1px solid;
+}
+
+.masthead__date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    border-top: #e6e6e6 1px solid;
+    border-bottom: #e6e6e6 1px solid;
+
+}
+
+
+.masthead__paper {
+    grid-area: paper;
+    font-size: 11px;
+    /* align-self: end;
+    justify-self: end; */
+    border-top: #e6e6e6 1px solid;
+    border-bottom: #e6e6e6 1px solid;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
