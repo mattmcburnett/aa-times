@@ -1,1 +1,48 @@
-/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 15px 75px;
+    grid-template-areas: "menu . action"
+    ". technologies ."
+    "date logo paper";
+}
+
+header {
+    padding: 0;
+}
+
+.masthead__technologies {
+    grid-area: technologies;
+}
+
+.masthead__menu-and-search {
+    grid-area: menu;
+}
+
+.masthead__actions {
+    grid-area: action;
+}
+
+.masthead__date {
+    grid-area: date;
+}
+
+.masthead__logo {
+    grid-area: logo;
+}
+
+.masthead__paper {
+    grid-area: paper;
+}
+
+.fa-bars,
+.fa-search {
+    font-size: 11px;
+    padding: 7px 9px;
+
+}
+
+.fa-bars:hover,
+.fa-search:hover {
+    background-color: #f7f7f5;
+}
