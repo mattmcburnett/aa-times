@@ -43,34 +43,106 @@
 
         <nav class="main">
             <ul class="navbar">
-              <li><a href="/products">World</a></li>
-              <li><a href="/services">SWE Online</a></li>
-              <li><a href="/about">San Francisco</a></li>
-              <li><a href="/contact">New York</a></li>
-              <li><a href="/contact">Jumpstart</a></li>
-              <li><a href="/contact">Marketing</a></li>
-              <li><a href="/contact">Sales</a></li>
-              <li><a href="/contact">TalentMatch</a></li>
-              <li><a href="/contact">Alumni</a></li>
-              <li><a href="/contact">All</a></li>
+                <li><a href="/products">World</a></li>
+                <li><a href="/services">SWE Online</a></li>
+                <li><a href="/about">San Francisco</a></li>
+                <li><a href="/contact">New York</a></li>
+                <li><a href="/contact">Jumpstart</a></li>
+                <li><a href="/contact">Marketing</a></li>
+                <li><a href="/contact">Sales</a></li>
+                <li><a href="/contact">TalentMatch</a></li>
+                <li><a href="/contact">Alumni</a></li>
+                <li><a href="/contact">All</a></li>
             </ul>
         </nav>
 
         <div class="interest-links">
-            <img src="./images/dog.png" alt="dog picture">
-            <div><h4>Dog Programmers</h4><p>Dogs are learnign to code at an incredible pace.</p></div>
-            <img src="./images/cat.png" alt="cat picture">
-            <div><h4>Cats and Coding</h4><p>Cats are on the rise as the #1 example for coding demos.</p></div>
+            <img class="dog_img" src="./images/dog.png" alt="dog picture">
+            <div class="dog">
+                <h4>Dog Programmers</h4>
+                <p>Dogs are learnign to code at an incredible pace.</p>
+            </div>
+            <img class="cat_img" src="./images/cat.png" alt="cat picture">
+            <div class="cat">
+                <h4>Cats and Coding</h4>
+                <p>Cats are on the rise as the #1 example for coding demos.</p>
+            </div>
 
+            <img class="plug_img" src="./images/plug.png" alt="plug">
+            <div class="plug">
+                <h4>Plugging stuff in</h4>
+                <p>Food or Bad? Find out now.</p>
+            </div>
+            <div class="stocks">
+                <div class="stock1">
+                    <span>AAO</span>
+                    <span>+100%</span>
+                </div>
+                <div class="stock2">
+                    <span>SWE</span>
+                    <span>+110%</span>
+                </div>
+                <div class="stock3">
+                    <span>CAT</span>
+                    <span>+111%</span>
+
+                </div>
+            </div>
+            <img class="sun-icon" src="images/sun-icon.png" alt="sun icon">
+            <div class="weather">77°F</div>
 
         </div>
-
-
-
     </header>
 
     <main>
+        <article class="main-article">
+            <h2>How App Academy Students Change Their Lives
+            </h2>
+            <div class="main-left">
+                <h3>App Academy Instructors on React & Redux</h3>
+                <p>By APP ACADEMY INSTRUCTIONAL TEAM</p>
+                <ul>
+                    <li>It helps you write applications that behave consistently, run in different environments (client,
+                        server, and native),
+                        and are easy to test. On top of that, it provides a great developer experience, such as live
+                        code editing combined with
+                        a time traveling debugger.</li>
+                    <li>The whole state of your app is stored in an object tree inside a single store.
+                        The only way to change the state tree is to emit an action, an object describing what happened.
+                        To specify how the
+                        actions transform the state tree, you write pure reducers.</li>
+                </ul>
+                <a href="#">1738 Comments</a>
+            </div>
+            <div class="main-right">
+                <iframe src="https://player.vimeo.com/video/380193367" width="480" height="280" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <p>Warning: This video will make you want to change your career</p>
+            </div>
+        </article>
 
+
+        <article class="opinions">
+            <div class="top">
+                <h2>Opinions</h2>
+                <p>By Breakfast Cat</p>
+                <h3>Will Javascript ever be as easy as Python?</h3>
+                <p>JavaScript continues to advance with the newly released EcmaScript8 but it still doesn't quite read
+                    like Python.
+                    299 Comments</p>
+                <a href="#">299 Comments</a>
+            </div>
+
+            <div class="bottom">
+                <p>Operations</p>
+                <h3>App Academy New York Has A Brand New Office</h3>
+                <span>By NY OPERATIONS</span>
+                <img src="images/new_office.jpg" alt="office img" class="office-image">
+                <div>The new space features hardwood floors and brick walls for a modern technology space with an aura
+                    for learning.</div>
+                <a href="#">172 Comments</a>
+            </div>
+        </article>
     </main>
 
     <footer>

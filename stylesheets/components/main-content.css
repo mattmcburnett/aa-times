@@ -1,1 +1,74 @@
 /* Your code here */
+main {
+    margin-top: 15px;
+}
+
+
+.main-article {
+    border: red 1px solid;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "main-left main-right";
+    width: 75%;
+    gap: 30px;
+}
+
+.main-article>h2 {
+    grid-area: header;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main-left {
+    grid-area: main-left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-left>ul {
+    padding-left: 14px;
+}
+
+.main-left>ul>li {
+    list-style: disc;
+    font-size: 12px;
+}
+
+.main-left>h3 {
+    margin: 0;
+}
+
+.main-left>p {
+    color: #747474;
+}
+
+.main-left>a {
+    color: rgb(14, 100, 129);
+    font-size: 11px;
+}
+
+.main-right {
+    grid-area: main-right;
+}
+
+
+.opinions {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "opnion-top"
+        "opnion-bottom";
+    width: 30%;
+}
+
+.top {
+    grid-area: opinion-top;
+}
+
+.bottom {
+    grid-area: opinion-bottom;
+}
